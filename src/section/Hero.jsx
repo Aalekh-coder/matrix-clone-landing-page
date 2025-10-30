@@ -71,13 +71,13 @@ const Hero = () => {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     width: "100%",
-    height: "60vh", // adjust as needed
+    height: "63vh", // adjust as needed
   };
 
   return (
     <>
       <div style={style} role="img" aria-label="Hero background" className="">
-        <h1 className="text-4xl font-bold text-center px-3 leading-tight pt-5">
+        <h1 className="text-4xl font-bold text-center px-3 leading-tight pt-14">
           Everyday Essentials:{" "}
           <span className="text-[#DE1E26]">
             Napkins, Kitchen Towels & Toilet Paper Supplier
@@ -96,7 +96,7 @@ const Hero = () => {
             className={`${geist.className} capitalize bg-[#DE1E26] text-white px-2 py-1 mx-auto text-lg flex items-center gap-3 rounded-md mt-5 `}
           >
             <Phone fill="white" size={18} />
-          Call for Best Deal
+            Call for Best Deal
           </button>
         </a>
       </div>
@@ -290,7 +290,7 @@ const Hero = () => {
           OUR KITCHEN TOWEL <span className="text-blue-800">-</span>
         </h3>
 
-        <div className="flex px-1 mt-8 ">
+        <div className="flex mt-8 justify-around px-4">
           <div className="flex items-center flex-col">
             <Image
               src={"/images/kt4-2.webp"}
@@ -314,15 +314,15 @@ const Hero = () => {
             <p
               className={`${roboto.className} text-sm font-medium text-center mt-1 px-2`}
             >
-              Kitchen Towel Essentia
+              Kitchen Towel <br /> Essentia
             </p>
           </div>
         </div>
 
-        <div className="mt-8 grid grid-cols-3 gap-1 items-start">
-          <div>
+        <div className="mt-8 grid grid-cols-3 gap-1 items-start justify-around">
+          <div className="flex flex-col items-center">
             <Image
-              src="/images/kt4-2-1.webp"
+              src="/images/kt4-2.webp"
               width={100}
               height={100}
               alt="issue"
@@ -333,7 +333,7 @@ const Hero = () => {
               Kitchen Towel
             </p>
           </div>
-          <div>
+          <div className="flex flex-col items-center">
             <Image
               src="/images/product8.webp"
               width={100}
@@ -346,7 +346,7 @@ const Hero = () => {
               Kitchen Towel Grand
             </p>
           </div>
-          <div>
+          <div className="flex flex-col items-center">
             <Image
               src="/images/kt1 (1).webp"
               width={100}
@@ -377,13 +377,13 @@ const Hero = () => {
         </a>
       </section>
 
-      {/* our kitchen towel  */}
+      {/* our Toilets towel  */}
       <section className="mb-10 px-2">
         <h3 className="text-4xl mt-5">
           OUR TOILETS ROLLS <span className="text-blue-800">-</span>
         </h3>
 
-        <div className="flex px-1 mt-8 ">
+        <div className="flex px-1 mt-8 justify-around">
           <div className="flex items-center flex-col">
             <Image
               src={"/images/product4-3.webp"}
@@ -412,8 +412,8 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="mt-8 grid grid-cols-3 gap-1 items-start">
-          <div>
+        <div className="mt-8 grid grid-cols-3 gap-1 items-start ">
+          <div className="flex flex-col items-center">
             <Image
               src="/images/tr3 (1).webp"
               width={100}
@@ -426,7 +426,7 @@ const Hero = () => {
               Toilet Roll Jumbo
             </p>
           </div>
-          <div>
+          <div className="flex flex-col items-center">
             <Image
               src="/images/product5-4.webp"
               width={100}
@@ -439,7 +439,7 @@ const Hero = () => {
               Toilet Roll Silk
             </p>
           </div>
-          <div>
+          <div className="flex flex-col items-center">
             <Image
               src="/images/product3-1.webp"
               width={100}
@@ -457,28 +457,42 @@ const Hero = () => {
 
       {/* will chech letter  */}
 
-      <section className="bg-[#F5F1DC] grid grid-cols-2 px-3 gap-1 py-4">
-        <div className="flex gap-4">
-          <HandCoins className="bg-[#DE1E26] text-white h-15 w-27 rounded-full p-2" size={35}/>
-          <p className={`${roboto.className} text-sm font-medium`}>Maximize your profit Margins</p>
+      <section className="bg-[#F5F1DC] grid grid-cols-2 px-3 gap-1 py-4 space-y-4 ">
+        <div className="flex gap-4 items-center">
+          <span className="bg-[#DE1E26] p-2 text-white rounded-full">
+            <HandCoins size={35} />
+          </span>
+          <p className={`${roboto.className} text-sm font-bold`}>
+            Maximize your profit Margins
+          </p>
         </div>
-        <div className="flex gap-4 space-y-5">
-          <FastForward className="bg-[#DE1E26] text-white h-15 w-27 rounded-full p-2" size={35}/>
-          <p className={`${roboto.className} text-sm font-medium`}>Fast Ordering</p>
+        <div className="flex gap-4 items-center">
+          <span className="bg-[#DE1E26] p-2 text-white rounded-full">
+            <FastForward size={35} />
+          </span>
+          <p className={`${roboto.className} text-sm font-bold`}>
+            Fast Ordering
+          </p>
         </div>
-        <div className="flex gap-4">
-          <PanelsTopLeft className="bg-[#DE1E26] text-white h-15 w-27 rounded-full p-2" size={35}/>
-          <p className={`${roboto.className} text-sm font-medium`}>Streamline Your</p>
+        <div className="flex gap-4 items-center">
+          <span className="bg-[#DE1E26] p-2 text-white rounded-full">
+            <Airplay size={35} />
+          </span>
+          <p className={`${roboto.className} text-sm font-bold`}>
+            Streamline Your Operations
+          </p>
         </div>
-        <div className="flex gap-4">
-          <WholeWord className="bg-[#DE1E26] text-white h-15 w-27 rounded-full p-2" size={35}/>
-          <p className={`${roboto.className} text-sm font-medium`}>Wholesale Retail Options</p>
+        <div className="flex gap-4 items-center">
+          <span className="bg-[#DE1E26] p-2 text-white rounded-full">
+            <PanelsTopLeft size={35} />
+          </span>
+          <p className={`${roboto.className} text-sm font-bold`}>
+           Wholesale & Retails Options
+          </p>
         </div>
-     
-       
       </section>
 
-{/* about  */}
+      {/* about  */}
       <section className="bg-[#FAB969] flex justify-center flex-col items-center px-10 py-10">
         <Image
           src="/images/img-flower2-3.webp"
@@ -503,7 +517,7 @@ const Hero = () => {
         <button
           className={`${geist.className} bg-[#CF1919] text-white px-5 py-2 mt-5 font-medium w-56 rounded-md`}
         >
-         Unlock Exclusive Offers
+          Unlock Exclusive Offers
         </button>
         <button
           className={`${geist.className} bg-[#CF1919] text-white px-5 py-2 mt-5 font-medium w-56 rounded-md`}
@@ -599,10 +613,9 @@ const Hero = () => {
       <Carousel />
 
       {/* another form  */}
-     <SecondForm />
+      <SecondForm />
     </>
   );
 };
 
 export default Hero;
-

@@ -28,7 +28,7 @@ const SecondForm = () => {
 
     try {
       const response = await fetch(
-        "https://formsubmit.co/ajax/aalekh@promozionebranding.com",
+        "https://formsubmit.co/ajax/matrixtissues@gmail.com",
         {
           method: "POST",
           body: formData,
