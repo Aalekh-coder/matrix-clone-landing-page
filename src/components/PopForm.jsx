@@ -20,7 +20,7 @@ const GetQuotePopup = ({ open, onClose }) => {
       'input[placeholder="Name"]'
     ).value;
     const phone = formRef.current.querySelector(
-      'input[placeholder="phone"]'
+      'input[placeholder="Phone"]'
     ).value;
     const place = formRef.current.querySelector(
       'input[placeholder="Place"]'
@@ -87,7 +87,7 @@ const GetQuotePopup = ({ open, onClose }) => {
           />
           <input
             type="tel"
-            placeholder="phone"
+            placeholder="Phone"
             className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
           <input

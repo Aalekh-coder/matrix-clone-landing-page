@@ -464,8 +464,7 @@ const Hero = () => {
         </div>
       </section>
 
-      {/* will chech letter  */}
-
+      {/* will check letter  */}
       <section className="bg-[#F5F1DC] grid grid-cols-2 px-3 gap-1 py-4 space-y-4 ">
         <div className="flex gap-4 items-center">
           <span className="bg-[#DE1E26] p-2 text-white rounded-full">
@@ -523,12 +522,16 @@ const Hero = () => {
           food, hospitality, and promotional use.
         </p>
 
-        <button
+        <a
+          href="https://wa.me/918810540823?text=Hi,%20I%20am%20interested%20in%20your%20products"
+          target="_blank"
+          rel="noopener noreferrer"
           className={`${geist.className} bg-[#CF1919] text-white px-5 py-2 mt-5 font-medium w-56 rounded-md`}
         >
           Unlock Exclusive Offers
-        </button>
+        </a>
         <button
+          onClick={() => setOpen(true)}
           className={`${geist.className} bg-[#CF1919] text-white px-5 py-2 mt-5 font-medium w-56 rounded-md`}
         >
           Explore Premium Range

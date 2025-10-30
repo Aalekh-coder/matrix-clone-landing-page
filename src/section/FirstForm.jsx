@@ -20,7 +20,7 @@ const FirstForm = () => {
       'input[placeholder="Name"]'
     ).value;
     const phone = formRef.current.querySelector(
-      'input[placeholder="phone"]'
+      'input[placeholder="Phone"]'
     ).value;
     const place = formRef.current.querySelector(
       'input[placeholder="Place"]'
@@ -94,7 +94,7 @@ const FirstForm = () => {
         <input
           type="phone"
           className={`${geist.className} bg-white px-2 rounded-sm py-2 w-1/2 focus:outline-none `}
-          placeholder="phone"
+          placeholder="Phone"
           minLength={10}
           maxLength={10}
           pattern="[0-9]{10}"
