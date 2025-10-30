@@ -29,7 +29,7 @@ const GetQuotePopup = ({ open, onClose }) => {
 
     try {
       const response = await fetch(
-        "https://formsubmit.co/ajax/fiaalekh@gmail.com",
+        "https://formsubmit.co/ajax/matrixtissues@gmail.com",
         {
           method: "POST",
           body: formData,
