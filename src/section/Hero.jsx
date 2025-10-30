@@ -1,3 +1,5 @@
+"use client";
+
 import Carousel from "@/components/Crousel";
 import {
   Airplay,
@@ -17,6 +19,9 @@ import { Lexend_Deca, Geist, Roboto_Slab } from "next/font/google";
 import Image from "next/image";
 import FirstForm from "./FirstForm";
 import SecondForm from "./SecondForm";
+import Navbar from "@/components/Navbar";
+import GetQuotePopup from "@/components/PopForm";
+import { useState } from "react";
 
 const lexendDeca = Lexend_Deca({
   weight: ["400", "700"],
@@ -32,6 +37,7 @@ const roboto = Roboto_Slab({
 });
 
 const Hero = () => {
+  const [open, setOpen] = useState(false);
   const categoriesCardDetails = [
     {
       title: "Face Tissue",
@@ -76,6 +82,9 @@ const Hero = () => {
 
   return (
     <>
+      <Navbar open={open} setOpen={setOpen} />
+      <GetQuotePopup open={open} onClose={setOpen} />
+
       <div style={style} role="img" aria-label="Hero background" className="">
         <h1 className="text-4xl font-bold text-center px-3 leading-tight pt-14">
           Everyday Essentials:{" "}
@@ -487,7 +496,7 @@ const Hero = () => {
             <PanelsTopLeft size={35} />
           </span>
           <p className={`${roboto.className} text-sm font-bold`}>
-           Wholesale & Retails Options
+            Wholesale & Retails Options
           </p>
         </div>
       </section>

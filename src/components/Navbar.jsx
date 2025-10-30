@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
 
-const Navbar = () => {
+const Navbar = ({ open, setOpen }) => {
   return (
-    <nav className=" z-50 flex items-center justify-between px-2 py-5 bg-white sticky top-0">
+    <nav className=" z-20 flex items-center justify-between px-2 py-5 bg-white sticky top-0">
       <Image
         width={100}
         height={100}
@@ -18,7 +18,10 @@ const Navbar = () => {
         src="/images/whatsappima.png"
         className="h-12 w-auto"
       />
-      <button className="font-medium bg-[#CF1919] text-white px-3 py-3 rounded-sm text-lg">
+      <button
+        onClick={() => setOpen(true)}
+        className="font-medium bg-[#CF1919] text-white px-3 py-3 rounded-sm text-lg"
+      >
         Get a Quote
       </button>
     </nav>
